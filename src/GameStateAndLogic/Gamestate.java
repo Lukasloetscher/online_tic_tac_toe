@@ -17,7 +17,7 @@ public class Gamestate {
 	// here to learn something about those. Normally
 	// i do not think that this one would be needed (or even that it should be
 	// checked.)
-	int get_active_player() throws Exception {
+	public int get_active_player() throws Exception {
 		if (active_player > 1 || active_player < 0) {
 			throw new Exception("Gamestate is out of bound");
 		}
