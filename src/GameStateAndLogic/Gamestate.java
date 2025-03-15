@@ -29,7 +29,7 @@ public class Gamestate {
 
 	public void make_move(int player, Coordinates_for_TicTacToe field_to_cross)  throws Exception {
 		cross_field(field_to_cross);
-		check_winner(field_to_cross);
+		check_gamestate(field_to_cross);
 		end_turn();
 		
 		
@@ -45,7 +45,7 @@ public class Gamestate {
 		active_player = active_player == VALUE_PLAYER_1 ? VALUE_PLAYER_2 : VALUE_PLAYER_1;
 	}
 	
-	private void check_winner(Coordinates_for_TicTacToe field_to_cross) {
+	private void check_gamestate(Coordinates_for_TicTacToe field_to_cross) {
 		
 	}
 
